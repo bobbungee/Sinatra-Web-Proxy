@@ -1,5 +1,5 @@
 #url_form
   %form{:method=>'POST',:action=>'/proxy'}
     %label{:for=>'url'} URL:
-    %input{:type=>'text',:name=>'url',:id=>'url',:value=>params[:splat][0]}
+    %input{:type=>'text',:name=>'url',:id=>'url',:value=>(params.nil? ? params[:splat][0] : '')}
     %input{:type=>'submit',:value=>'Go!'}
