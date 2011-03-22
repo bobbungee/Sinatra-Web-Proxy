@@ -1,0 +1,6 @@
+#framed_boxes
+  %frameset{:rows=>'50px,*',:frameborder=>'0'}
+    .title_bar
+      %frame{:src=>'/form',:border=>'0',:marginwidth=>'1',:marginheight=>'1',:scrolling=>'none'}
+    .web_page
+      %frame{:src=>'/get_page/'+@url,:border=>'0',:marginwidth=>'1',:marginheight=>'1',:scrolling=>'auto'}
