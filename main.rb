@@ -9,7 +9,7 @@ get '/' do
   haml :url_form
 end
 
-get '/form' do
+get '/form/*' do
   "<base target='_top'>"+(haml :url_form)
 end
 
