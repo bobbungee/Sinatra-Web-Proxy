@@ -6,7 +6,7 @@ require 'lib/mongler'
 set :haml, :format=>:html5
 
 get '/' do
-  haml :url_form
+  haml :index
 end
 
 get '/form/*' do
@@ -14,7 +14,6 @@ get '/form/*' do
 end
 
 post '/proxy' do
-  @url = params[:url]
   haml :framed, :layout => :lay_frames
 end
 

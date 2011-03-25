@@ -9,11 +9,7 @@ class Mongler
   end
 
   def is_url?(url=nil)
-    if url.nil?
-      !@url.scheme.nil?
-    else
-      !(URI.parse(url).scheme.nil?)
-    end
+    url.nil? ? !@url.scheme.nil? : !(URI.parse(url).scheme.nil?)
   end
 
   def mangle(tag, attribute, prefix = false)
