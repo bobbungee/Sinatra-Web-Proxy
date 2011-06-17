@@ -1,9 +1,7 @@
-require 'rubygems'
 require 'sinatra'
 require 'haml'
 require 'sass'
 require 'open-uri'
-require 'nokogiri'
 require './lib/mongler'
 
 set :haml, :format=>:html5
